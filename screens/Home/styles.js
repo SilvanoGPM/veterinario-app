@@ -64,6 +64,47 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 5,
   },
+
+  notifications: {
+    flex: 1,
+    backgroundColor: "rgba(27, 27, 27, 0.41)",
+    alignItems: "center",
+    paddingTop: 60,
+  },
+
+  notificationsContent: {
+    backgroundColor: "#FFFFFF",
+    width: 220,
+    height: 160,
+    padding: 10,
+    borderRadius: 10,
+  },
+
+  notificationsText: {
+    color: "#FF5A5A",
+    fontSize: 12,
+    borderBottomColor: "#7B7B7B",
+    borderBottomWidth: 1,
+    paddingVertical: 10,
+  },
+
+  bellShow: {
+    backgroundColor: "#FFFFFF",
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    position: "absolute",
+    top: 20,
+    right: 15,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  corner: {
+    top: 55,
+    right: 61,
+    position: "absolute",
+  },
 });
 
 export default styles;
