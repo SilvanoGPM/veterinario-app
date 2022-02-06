@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, TextInput } from "react-native";
 
 import styles from "./styles";
 
-export function Login() {
+export function Login({ navigation }) {
   const [selectedCPF, setSelectedCPF] = useState(true);
 
   function selectCPF() {
@@ -12,6 +12,10 @@ export function Login() {
 
   function selectEmail() {
     setSelectedCPF(false);
+  }
+
+  function handleLogin() {
+    navigation.navigate('Home');
   }
 
   return (
@@ -71,7 +75,7 @@ export function Login() {
       </View>
 
       <View style={styles.loginContainer}>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity onPress={handleLogin} style={styles.loginButton}>
           <Text style={styles.loginText}>Entrar</Text>
         </TouchableOpacity>
       </View>
